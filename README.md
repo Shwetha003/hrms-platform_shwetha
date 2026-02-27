@@ -2,7 +2,7 @@
 
 An intelligent Human Resource Management System (HRMS) built to optimize team productivity, manage tasks, and leverage blockchain technology for secure, immutable task logging.
 
-## ✨ Key Features
+## Key Features
 
 *   **Role-Based Access Control (RBAC):** Distinct dashboards and capabilities for Admins and Employees.
 *   **Organization Management:** Multi-tenant architecture allowing users to register or join specific organizations.
@@ -15,7 +15,7 @@ An intelligent Human Resource Management System (HRMS) built to optimize team pr
 *   **Web3 Integration:** Securely logs completed tasks to the **Polygon Amoy testnet** using a custom Solidity smart contract, providing an immutable record of work.
 *   **Modern UI/UX:** A responsive, beautiful interface built with React, Tailwind CSS, and Framer Motion for smooth animations and interactions.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 **Frontend:**
 *   React.js (Vite)
@@ -41,7 +41,7 @@ An intelligent Human Resource Management System (HRMS) built to optimize team pr
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these instructions to set up the project locally.
 
@@ -54,7 +54,7 @@ Follow these instructions to set up the project locally.
 1. Create a PostgreSQL database (e.g., `rizeos_db`).
 2. Navigate to the `backend` directory: `cd backend`
 3. Create a `.env` file from the example (if available) or create a new one: `touch .env`
-4. **⚠️ IMPORTANT: Update your `.env` file** to match your local PostgreSQL database credentials:
+4. ** IMPORTANT: Update your `.env` file** to match your local PostgreSQL database credentials:
    ```env
    DATABASE_URL="postgresql://<user>:<password>@localhost:5432/rizeos_db?schema=public"
    JWT_SECRET="your_super_secret_jwt_key"
@@ -99,7 +99,7 @@ If you want to use the local Hardhat network for testing blockchain features ins
    ```bash
    npm install
    ```
-3. **⚠️ IMPORTANT: Create a `.env` file** in the `frontend` directory:
+3. ** IMPORTANT: Create a `.env` file** in the `frontend` directory:
    ```env
    VITE_API_URL="http://localhost:5000/api"
    # Optional: Set this to override the default Hardhat localhost address if testing Web3
@@ -113,7 +113,7 @@ If you want to use the local Hardhat network for testing blockchain features ins
 
 ---
 
-## 📖 Usage Guide
+## Usage Guide
 
 1. **Register as an Admin:** Open the frontend app and create a new organization. You will be assigned the `Admin` role.
 2. **Add Employees:** Go to the "Employees" tab and add team members. They will default to a placeholder password (`password123`) which they can change on their profile.
@@ -121,7 +121,7 @@ If you want to use the local Hardhat network for testing blockchain features ins
 4. **Connect Wallet:** Employees can go to their Profile page and link their MetaMask wallet.
 5. **Log Work on Chain:** When an employee moves a task exactly to the "Completed" status, MetaMask will prompt them to sign a transaction, permanently logging the achievement on the blockchain.
 
-## 🧠 AI Algorithm Details: Workload Velocity & Decay
+## AI Algorithm Details: Workload Velocity & Decay
 
 The Smart Assign feature calculates a final score ($S$) for every eligible employee to determine the best fit for a task.
 
@@ -134,5 +134,5 @@ $$ S = (M \times R) - (W \times V) $$
 
 ---
 
-## 📄 License
+## License
 This project is licensed under the MIT License.
