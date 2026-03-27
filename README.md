@@ -1,4 +1,4 @@
-# RizeOS: AI-Powered HRMS platform with Web3 logging
+# AI-Powered HRMS platform with Web3 logging
 
 An intelligent Human Resource Management System (HRMS) built to optimize team productivity, manage tasks, and leverage blockchain technology for secure, immutable task logging.
 
